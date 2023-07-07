@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booster Pro - Try (YouTube - Description Writter)</title>
+  
+  
+  
+  
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div>
+  
+  
+  <nav>
+    Booster Pro
+  </nav>
+  
+  
+</div>
+
+
+
+<div>
+  
+  
+  <div>
+    
+    
+    
+    <ul>
+      <li>
+        <h1>
+          <center>
+          Enter the details of your video
+          </center>
+        </h1>
+      </li>
+    </ul>
+    
+    
+    
+  </div>
+  
+  
+  
+  <div class="marg">
+    
+    
+    
+    
+    
+    <input id="title" type="text" name="title of the video " placeholder="Title of your video"><br><br>
+    <input type="text" id="channel_name" name="title of the video " placeholder="Your youtube channel name"><br><br>
+    <input id="channel_url" type="url" name="title of the video " placeholder="Your channel URL"><br><br>
+    <input id="insta_username" type="url" name="title of the video " placeholder="Your Instagram username"><br><br>
+    <input id="fb" type="url" name="title of the video " placeholder="Your facebook URL"><br><br>
+    <input id="website" type="url" name="title of the video " placeholder="Your website URL"><br><br>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  
+  
+  
+  
+  
+  
+</div>
+
+
+
+
+
+<div>
+  
+  <center>
+  <button onclick="generate_description()"> + Generate</button>
+  </center>
+  
+</div>
+
+
+
+
+
+<div id="description">
+  
+  
+  
+</div>
+
+
+
+
+
+</body>
+
+<script>
+  
+  
+  
+  var official_website = false;
+  var social_media_accounts = false;
+
+  
+  
+  
+  function generate_description(){
+    var video_title = document.getElementById("title").value;
+    var insta = document.getElementById("insta_username").value;
+    var fb = document.getElementById("fb").value;
+  var website = document.getElementById("website").value;
+    
+    var des = document.getElementById("description");
+      var channel_name = document.getElementById("channel_name").value;
+      var channel_url = document.getElementById("channel_url").value;
+      
+      
+      
+      
+    des.innerHTML = '<p> ' + video_title + '</p><br><br><p> Hy i am ' + channel_name + ' and i hope this video was nice for you . </p><br><br>';
+    
+    
+    
+    
+    // if (official_website = true){
+      // if (social_media_accounts = true){
+        
+        des.innerHTML = '<p> ' + video_title + '</p><p> Hy i am ' + channel_name + ' and i hope this video was nice for you . </p> <p> We also has some social media accounts for you please follow us on our accounts :- <br><br> Instagram : ' + insta + ' <br>Facebook : ' + fb + '<br><br><p> Our official web site :- '  + website + '<br><br>Thanks for reading our description!<br><br> Add some hashtags ';
+      // }
+    // }
+      
+    // }
+    
+  }
+  
+  
+  
+  
+</script>
+
+</html>
