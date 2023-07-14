@@ -116,3 +116,25 @@ input:focus {
 .marg{
   margin: 10px;
 }
+
+a{
+  
+  color: dodgerblue;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: monospace;
+  transition: 0.5s;
+  font-weight: bold;
+  
+}
+a:hover{
+  
+  color: skyblue;
+  
+}
+
+a:active{
+  
+  color: indianred;
+  
+}
