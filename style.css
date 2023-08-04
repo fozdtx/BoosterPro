@@ -116,3 +116,49 @@ input:focus {
 .marg{
   margin: 10px;
 }
+
+a{
+  
+  color: dodgerblue;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: monospace;
+  transition: 0.5s;
+  font-weight: bold;
+  
+}
+a:hover{
+  
+  color: skyblue;
+  
+}
+
+a:active{
+  
+  color: indianred;
+  
+}
+.box-01{
+  
+  outline: 1px solid #1C1C1C;
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  font-family: monospace;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  border-top: 5px solid #1c1c1c;
+  
+}
+.box-01:hover{
+  background: silver;
+  box-shadow: 2px 2px 4px #1C1C1C;
+}
+.box-1:active{
+  background: dimgrey;
+  cursor: progress;
+  box-shadow: 4px 4px 8px #1C1C1C;
+}
