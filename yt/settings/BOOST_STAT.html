@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booster Pro - Try (YouTube - Search)</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div id="hg" onclick="boosting_stats()"></div>
+  <a id="h" href=""></a>
+  <div id="bst">
+    
+  </div>
+
+</body>
+
+<script>
+  
+  
+  
+
+  
+  
+  
+  function boosting(){
+    var boosting_status = "";
+    
+    for (var processed_data = 1;processed_data <= 2;processed_data++){
+      
+      var get_processed_data = Math.floor(Math.random()*9);
+      
+      boosting_status += get_processed_data;
+      
+    }
+    return boosting_status;
+  }
+  
+  
+  
+  
+  function boosting_stats() {
+    
+  
+  
+      // setTimeout(function() {
+        document.getElementById("bst").innerHTML = boosting();
+      // }, 0100);
+  
+  
+    
+  }
+  
+  document.getElementById("hg").click();
+  setTimeout(function(){
+      document.getElementById("h").click();
+
+  }, 1000);
+  // document.getElementById("h").click();
+  // boosting_stats();  
+  
+  
+</script>
+
+</html>
