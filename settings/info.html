@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="theme-color" content="#1C1C1C" >
+  <title>Booster Pro - Try (YouTube - Search)</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  
+  <div>
+    
+    
+    <nav>
+      
+      Booster Pro - Settings
+      
+    </nav>
+    
+    
+  </div>
+
+
+
+<div>
+  
+  <br /><br><br>
+  
+</div>
+
+<div>
+  
+  <center>
+    
+    <div>
+      
+      <h1>
+        
+        <i>
+          
+          Software Info
+          
+        </i>
+        
+      </h1>
+      
+    </div>
+    
+    <br><hr><br>
+    
+  </center>
+  
+</div>
+
+<div>
+  
+  <!-- booster pro comments -->
+  Manufacturer : FOZ DTX CORP , OPERATING SYSTE , GHGL TG GAMER <br><br>
+  Build no for this device : <span id="build">Can't show</span><br><br>
+  Hoster : FOZ DTX CORP <br><br>
+  domain : fozdtx.github.io <br><br>
+  Version : 0.4 <br><br>
+  Boosting Status : <iframe src="BOOST_STAT.html" frameborder="0" style="height: 16px;width: 20px;"></iframe>% <br><br>
+  
+</div>
+<div>
+  
+  <center>
+    
+    <div>
+      
+      
+      <button onclick="window.open('https://fozdtx.github.io/BoosterPro/')">Re Start Booster Pro</button>
+      
+    </div>
+    
+  </center>
+  
+</div>
+
+
+
+</body>
+
+<script>
+  
+  
+  
+  function build_no(){
+    
+    var build_number = "";
+    
+    for (var processed_data = 1;processed_data <= 10;processed_data++){
+      
+      var get_build_number = Math.floor(Math.random()*10);
+      
+      build_number+=get_build_number;
+      
+    }
+    return build_number;
+    
+  }
+  
+  function show_build_number(){
+    document.getElementById("build").innerHTML = build_no();
+  }
+  show_build_number();
+  
+  
+  
+  function boosting(){
+    var boosting_status = "";
+    
+    for (var processed_data = 1;processed_data <= 2;processed_data++){
+      
+      var get_processed_data = Math.floor(Math.random()*9);
+      
+      boosting_status += get_processed_data;
+      
+    }
+    return boosting_status;
+  }
+  
+  
+  
+  
+  function boosting_stats() {
+    
+  
+  
+      setTimeout(function() {
+        document.getElementById("boost").innerHTML = boosting();
+      }, 2000)
+  
+  
+    
+  }
+  
+  
+  boosting_stats();
+  
+  
+</script>
+
+</html>
