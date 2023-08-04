@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booster Pro - Try (YouTube - Search)</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+ <div id="action">
+  
+</div>
+<div>
+
+
+  <nav>
+
+
+    Booster Pro <img class="settings-icon" src="settings.png" alt="Copyright (c) FOZ_DTX_CORP 2023" onclick="open_settings()">
+
+
+  </nav>
+
+
+</div>
+
+
+
+
+<div>
+  
+  <br /><br><br>
+  
+</div>
+
+<div>
+  
+  <center>
+    
+    <div>
+      
+      
+      <input type="text" name="text" placeholder="Enter some keywords" id="input"> 
+      <button onclick="search()">  Generate Tags  </button>
+      <br>
+      <br>
+      <br>
+      
+      <h2>#hashtagsforyoutube</h2><br>
+      <div style="padding: 10px;border: 1px solid black; border-radius: 10px;box-shadow: 0px 0px 5px black; cursor: crosshair;height: 50px; width: 80%;max-height: 500px;font-weight: bold;font-family: 'Victor Mono', monospace;overflow: scroll;" id="hashtags">
+        
+        
+        
+      </div><br><br>
+      <h2>tags for youtube video</h2><br>
+      <div style="padding: 10px;border: 1px solid black; border-radius: 10px;box-shadow: 0px 0px 5px black; cursor: crosshair;height: 50px; width: 80%;max-height: 500px;font-weight: bold;font-family: 'Victor Mono', monospace;overflow: scroll;" id="tags">
+      
+        
+      
+      </div>
+    </div>
+    
+  </center>
+  
+</div>
+
+
+<a href="">  Reset  </a>
+
+</body>
+<script src="main.js"></script>
+
+<script>
+  
+  var tags;
+  
+  function search(){
+    
+    
+    
+    var input  = document.getElementById("input").value;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    document.getElementById('hashtags').innerHTML += "<b style='word-spacing: -10px;text-transform: lowercase;'>#"  + input + "</b>" + "<b style='word-spacing: 1px;'> </b>";
+    
+    
+    
+    
+    document.getElementById('tags').innerHTML += input + ",";
+    
+    tags += input + ",";
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+  
+  
+  
+  
+</script>
+
+</html>

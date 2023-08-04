@@ -3,144 +3,31 @@
 
 <head>
   <meta charset="UTF-8">
+ <meta name="theme-color" content="#1C1C1C" >
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Booster Pro - Try (YouTube - Search)</title>
-  
-  <style>
-body {
-  font-family: Arial;
-  margin: 0px;
-}
-nav{
-  background: #1c1c1c;
-  color: white;
-  padding: 30px;
-  font-size: 50px;
-  text-align: center;
-}
-::selection{
-  background: #1c1c1c;
-  color: white;
-}
-
-
-.border{
-  margin: 10%;
-  padding: 1%;
-  border: 1px solid #1c1c1c;
-  box-shadow: 0px 0px 2px #1c1c1c;
-}
-
-button{
-  background: #1C1C1C;
-  color: white;
-  border: 5px solid #1C1C1C;
-  cursor: pointer;
-  transition-property: background, border;
-  transition-duration: 0.5s;
-  transition-timing-function: 1;
-  font-weight: bold;
-  padding: 20px;
-  font-size: 20px;
-}
-button:hover{
-  background: dimgrey;
-  border-color: dimgrey;
-}
-button:active{
-  background: dodgerblue;
-  border-color: dodgerblue;
-}
-.box-1{
-  background: silver;
-  width: 200px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 5px solid silver;
-  cursor: pointer;
-  font-size: 20px;
-  margin-top: 10%;
-}
-.box-1-opt{
-background: silver;
-  width: 200px;
-  padding: 10px;
-  border-radius: 0px;
-  border: 5px solid silver;
-  cursor: pointer;
-  font-size: 20px;
-  transition-duration: 0.5s;
-  transition-property:background, border;
-  transition-timing-function: 1;
-  text-align: center;
-}
-.box-1-opt:hover{
-  background: grey;
-  border-color: grey;
-  box-shadow: 0px 0px 2px black;
-}
-.dropdown{
-  height: 0.11px;
-  transition-property: height;
-  transition-duration: 2s;
-  transition-timing-function: 1;
-}
-.dropdown-down{
-  height: 0.11px;
-  transition-property: height;
-  transition-duration: 2s;
-  transition-timing-function: 1;
-}
-.d{
-  transform: rotateY(-90deg);
-}
-.box-1-opt:active{
-  background: mediumspringgreen;
-  border-color: mediumspringgreen;
-  
-}
-
-input{
-  border: 1px solid #1C1C1C;
-  box-shadow: 0px 0px 5px #1C1C1C;
-  padding: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  outline: none;
-  transition-property: border;
-  transition-duration: 1s;
-  transition-timing-function: 1;
-}
-input:hover{
-  border: 3px solid #1C1C1C;
-}
-
-input:active {
-  border: 3px solid #1C1C1C;
-}
-
-input:focus {
-  border: 3px solid #1C1C1C;
-}
-.marg{
-  margin: 10px;
-}
-    </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
   
-  <div>
-    
-    
-    <nav>
-      
-      Booster Pro
-      
-    </nav>
-    
-    
-  </div>
+  <div id="action">
+  
+</div>
+<div>
+
+
+  <nav>
+
+
+    Booster Pro <img class="settings-icon" src="settings.png" alt="Copyright (c) FOZ_DTX_CORP 2023" onclick="open_settings()">
+
+
+  </nav>
+
+
+</div>
+
 
 
 
@@ -200,5 +87,6 @@ input:focus {
   
   
 </script>
+<script src="main.js"></script>
 
 </html>
